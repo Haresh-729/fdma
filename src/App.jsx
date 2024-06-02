@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="w-screen scrollbar-hide overflow-hidden">
       <Routes>
-      <Route path="/fdma" element={<Landing/>}/>
+      <Route path="/" element={<Landing/>}/>
       </Routes>
     </div>
   )
