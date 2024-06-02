@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Landing from './Componenets/Landing';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -10,7 +11,9 @@ function App() {
 
   return (
     <div className="w-screen scrollbar-hide overflow-hidden">
-      <Landing/>
+      <Routes>
+      <Route path="/fdma" element={<Landing/>}/>
+      </Routes>
     </div>
   )
 }
